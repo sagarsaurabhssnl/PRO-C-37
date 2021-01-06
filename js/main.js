@@ -1,5 +1,5 @@
 //Create variables here
-var firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyB54pgEbg4tHcTaOey6STt-uQd_MVcb5II",
   authDomain: "petfood-5c633.firebaseapp.com",
   databaseURL: "https://petfood-5c633-default-rtdb.firebaseio.com",
