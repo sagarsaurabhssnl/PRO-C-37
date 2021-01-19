@@ -1,13 +1,12 @@
 //Create variables here
-const firebaseConfig = {
-  apiKey: "AIzaSyB54pgEbg4tHcTaOey6STt-uQd_MVcb5II",
-  authDomain: "petfood-5c633.firebaseapp.com",
-  databaseURL: "https://petfood-5c633-default-rtdb.firebaseio.com",
-  projectId: "petfood-5c633",
-  storageBucket: "petfood-5c633.appspot.com",
-  messagingSenderId: "200579137635",
-  appId: "1:200579137635:web:1e6e801c04c73f49d23856"
-};
+var firebaseConfig = {
+    apiKey: "AIzaSyCOs1TNcQ-T7UhdJ8JW_LJjPJab1-eEAAc",
+    authDomain: "petfood2.firebaseapp.com",
+    projectId: "petfood2",
+    storageBucket: "petfood2.appspot.com",
+    messagingSenderId: "884487208467",
+    appId: "1:884487208467:web:d15c101100ae9388b2c9e6"
+  };
 firebase.initializeApp(firebaseConfig);
 var dog, stock = [], lastFed = "not fed yet", foodtime = "loading...", money = "loading...", food = "loading...", foodtimetext = "loading...";
 var dogImg, dogsitImg, doghappyImg, milkImg, bedroomdogImg, deaddogImg, vacationdogImg, foodstockImg, gardendogImg, injectiondogImg, lazydogImg, livingroomImg, runningdogImg, runningleftdogImg, vaccinationImg, washroomImg;
