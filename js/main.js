@@ -194,12 +194,6 @@ function keyPressed() {
         undogamestatetimer();
         keypress = 1;
       }
-      if (keyCode === 72) {
-        // cheatCode = 1;
-        refgameState.change("vaccination");
-        undogamestatetimer();
-        keypress = 1;
-      }
       if (keyCode === 76) {
         // cheatCode = 1;
         refgameState.change("lazy");
