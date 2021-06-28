@@ -1,12 +1,14 @@
 //Create variables here
 var firebaseConfig = {
-    apiKey: "AIzaSyCOs1TNcQ-T7UhdJ8JW_LJjPJab1-eEAAc",
-    authDomain: "petfood2.firebaseapp.com",
-    projectId: "petfood2",
-    storageBucket: "petfood2.appspot.com",
-    messagingSenderId: "884487208467",
-    appId: "1:884487208467:web:d15c101100ae9388b2c9e6"
-  };
+  apiKey: "AIzaSyAvOFjSk8K2ij0Ez4mIcoSK0q4ydDGANSs",
+  authDomain: "buzzerapp-ef589.firebaseapp.com",
+  databaseURL: "https://buzzerapp-ef589-default-rtdb.firebaseio.com",
+  projectId: "buzzerapp-ef589",
+  storageBucket: "buzzerapp-ef589.appspot.com",
+  messagingSenderId: "926846587452",
+  appId: "1:926846587452:web:d56b5fcdb3448a5d5be939",
+  measurementId: "G-BLL8X9F328"
+};
 firebase.initializeApp(firebaseConfig);
 var dog, stock = [], lastFed = "not fed yet", foodtime = "loading...", money = "loading...", food = "loading...", foodtimetext = "loading...";
 var dogImg, dogsitImg, doghappyImg, milkImg, bedroomdogImg, deaddogImg, vacationdogImg, foodstockImg, gardendogImg, injectiondogImg, lazydogImg, livingroomImg, runningdogImg, runningleftdogImg, vaccinationImg, washroomImg;
@@ -191,6 +193,12 @@ function keyPressed() {
       if (keyCode === 71) {
         // cheatCode = 1;
         refgameState.change("garden");
+        undogamestatetimer();
+        keypress = 1;
+      }
+      if (keyCode === 72) {
+        // cheatCode = 1;
+        refgameState.change("vaccination");
         undogamestatetimer();
         keypress = 1;
       }
